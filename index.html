@@ -4,31 +4,205 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LUME Browser</title>
-<meta name="description" content="LUME is a web browser for iPhone with a built-in assistant.">
+<meta name="description" content="LUME is a web browser for iPhone with a calm reader, natural read-aloud voices and an assistant that works only where you let it.">
+<meta name="theme-color" content="#96503c">
 <link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <img src="logo.png" alt="">
-    <a href="./">LUME</a>
-  </header>
 
-  <h1>A web browser for iPhone.</h1>
-  <p class="lede">Type a web address or a search to open any website in a tab. When you want help, hand a tab to LUME's built-in assistant and ask it to do a task on that site.</p>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="logo.png" alt="">LUME</a>
+    <div class="links">
+      <a href="#read">Read</a>
+      <a href="#listen">Listen</a>
+      <a href="#ask">Ask</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="pill" href="https://testflight.apple.com/join/erP8dkqD">Get the beta</a>
+    </div>
+  </div>
+</nav>
 
-  <p><a class="button" href="https://testflight.apple.com/join/erP8dkqD">Join the beta on TestFlight</a></p>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Now on TestFlight</span>
+    <h1>The web, read calmly.</h1>
+    <p class="lede">LUME is a web browser for iPhone. A quiet reader, natural voices that read articles aloud, and an assistant that only works where you let it.</p>
+    <a class="cta" href="https://testflight.apple.com/join/erP8dkqD">Join the beta on TestFlight</a>
+    <span class="sub">Free. Requires iOS 27.</span>
 
-  <h2>Browsing</h2>
-  <p>LUME shows web pages with Apple's WebKit. Tabs and the address bar work the way you expect from a browser.</p>
+    <div class="phones">
+      <div class="phone"><img src="shots/web.jpg" alt="A web page open in LUME"></div>
+      <div class="phone"><img src="shots/home.jpg" alt="LUME's home screen"></div>
+      <div class="phone"><img src="shots/reader-night.jpg" alt="An article in LUME's reader, Night theme"></div>
+    </div>
+  </div>
+</header>
 
-  <h2>The assistant</h2>
-  <p>When you hand a tab to the assistant, you can stop it or take the tab back at any time. LUME's AI features use an AI model provider you choose, with your own API key. See the <a href="privacy.html">privacy policy</a> for what that sends.</p>
+<section id="read">
+  <div class="wrap split">
+    <div class="copy">
+      <h3>A reader that gets out of the way.</h3>
+      <p>Open any article in a clean reading view. Choose Paper or Night, set the text size and spacing, and jump around with an outline of the page.</p>
+      <ul>
+        <li>Tables, quotes and code keep their shape</li>
+        <li>Picks up where you stopped reading</li>
+        <li>Translate with Apple's built-in translation</li>
+      </ul>
+    </div>
+    <div class="shot">
+      <div class="phone"><img src="shots/reader-outline.jpg" alt="The reader's page outline"></div>
+      <div class="phone"><img src="shots/reader-controls.jpg" alt="Reading appearance controls"></div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <a href="privacy.html">Privacy policy</a>
-  </footer>
-</main>
+<section id="listen" class="alt">
+  <div class="wrap split flip">
+    <div class="copy">
+      <h3>Listen to anything you'd read.</h3>
+      <p>Turn an article into audio with natural English voices that run on your iPhone. Download a voice once and it works offline.</p>
+      <ul>
+        <li>Speed control and lock-screen controls</li>
+        <li>Several voices to choose from</li>
+        <li>Other languages use your iPhone's own voices</li>
+      </ul>
+    </div>
+    <div class="shot">
+      <div class="phone"><img src="shots/player.jpg" alt="LUME reading an article aloud"></div>
+    </div>
+  </div>
+</section>
+
+<section id="ask">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Help when you ask for it.</h2>
+      <p>LUME's assistant stays out of the way until you call on it, and uses the AI provider you choose with your own key.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+        <h4>Ask about a page</h4>
+        <p>Ask a question about the page you're on and see the exact passages the answer comes from.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 10h16M4 14h10M4 18h7"/></svg></div>
+        <h4>Summaries</h4>
+        <p>Get the gist of a long article in one tap.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="7" height="14" rx="2"/><rect x="14" y="5" width="7" height="14" rx="2"/></svg></div>
+        <h4>Compare tabs</h4>
+        <p>Compare two to six open pages side by side, with links back to each.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg></div>
+        <h4>Watch a page</h4>
+        <p>Tell LUME what you care about on a page, and get notified when it changes.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <h4>Hand over a tab</h4>
+        <p>Let the assistant work in a tab you choose. A banner lets you stop it or take the tab back at any time.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M4 4l16 16"/></svg></div>
+        <h4>Never in private tabs</h4>
+        <p>AI features are switched off in private tabs, so nothing from them is sent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Everything a browser should do.</h2>
+      <p>The everyday things work the way you expect.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/></svg></div>
+        <h4>Tabs and tab groups</h4>
+        <p>Pin tabs, sort them into named groups, and search across everything you have open.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h4>Clean pages</h4>
+        <p>Hides the ads and cookie banners it detects, and tells you how many. When hiding isn't enough, it picks the most private cookie choice.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M4 4l16 16"/></svg></div>
+        <h4>Private tabs</h4>
+        <p>Separate cookies, no history, and the page is never sent to AI.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg></div>
+        <h4>Bookmarks</h4>
+        <p>Folders, plus import and export as a standard bookmarks file.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5M12 7v5l3 2"/></svg></div>
+        <h4>History</h4>
+        <p>Find a page you saw last week, or bring back a tab you just closed.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></div>
+        <h4>Downloads</h4>
+        <p>Files save to the Files app, with a list you can search.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+        <h4>Find in page</h4>
+        <p>Search for words on any page.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+        <h4>Site permissions</h4>
+        <p>Choose Ask or Block for each site's camera and microphone.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+        <h4>Search</h4>
+        <p>Search Google from the address bar. One tap hides sponsored results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Private by design.</h2>
+      <p>LUME has no servers and no accounts.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><h4>Stays on your iPhone</h4><p>Tabs, history and settings are stored on your device. No analytics, no ads.</p></div>
+      <div class="card"><h4>Your key, your provider</h4><p>AI features use a provider you choose. Your key stays in your iPhone's Keychain.</p></div>
+      <div class="card"><h4>Off in private tabs</h4><p>Nothing from a private tab is sent to an AI model.</p></div>
+    </div>
+    <p style="margin-top:28px"><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
+<section class="final alt">
+  <div class="wrap">
+    <img class="mark" src="logo.png" alt="">
+    <h2>Try LUME today.</h2>
+    <p>Join the public beta on TestFlight.</p>
+    <a class="cta" href="https://testflight.apple.com/join/erP8dkqD">Join the beta</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>LUME Browser · Screenshots show the Wikipedia article “Lighthouse” and its photo (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>).</span>
+    <span><a href="privacy.html">Privacy policy</a></span>
+  </div>
+</footer>
+
 </body>
 </html>

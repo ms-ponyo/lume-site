@@ -8,16 +8,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <img src="logo.png" alt="">
-    <a href="./">LUME</a>
-  </header>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="logo.png" alt="">LUME</a>
+    <div class="links"><a class="pill" href="https://testflight.apple.com/join/erP8dkqD">Get the beta</a></div>
+  </div>
+</nav>
+<main class="doc">
 
   <h1>Privacy policy</h1>
   <p class="updated">Last updated October 13, 2026</p>
 
-  <p>LUME has no servers and no accounts. We don't collect, store or sell your personal data, and the app contains no analytics or advertising SDKs.</p>
+  <p class="summary">LUME has no servers and no accounts. We don't collect, store or sell your personal data, and the app contains no analytics or advertising SDKs.</p>
 
   <h2>What stays on your device</h2>
   <p>Your tabs, browsing history, settings and assistant conversations are stored on your iPhone. Websites you visit can set cookies and website data in LUME just as they would in any browser. You can clear them on the device.</p>
@@ -25,6 +27,10 @@
   <h2>AI features and your AI provider</h2>
   <p>LUME's AI features run only if you add an API key for an AI model provider (for example, Anthropic or OpenRouter). The key is kept in your device's Keychain, is not synced to iCloud and is not included in backups.</p>
   <p>With a key added, LUME's AI features send text to that provider directly from your device: your requests to the assistant, and text from web pages you open or have open in tabs, so that the assistant can act on them and LUME can rearrange or summarize them for you. Without a key, nothing is sent to an AI provider. We never receive any of it. That provider's own privacy policy covers how it handles this data. If you pair LUME with your own Mac to run a model there, the request goes to that Mac instead.</p>
+  <p>Page summaries can instead use Apple's on-device model when Apple Intelligence is turned on; that stays on your iPhone. Nothing from a private tab is sent to any AI model.</p>
+
+  <h2>Read-aloud voices</h2>
+  <p>The natural English voices run on your iPhone. The first time you use them, LUME downloads the voice files from GitHub. That download sends no personal information beyond what any file download does, such as your IP address to GitHub.</p>
 
   <h2>Websites</h2>
   <p>Like any browser, LUME connects to the websites you open. Those sites see what they would see from any browser and follow their own privacy policies.</p>
@@ -38,9 +44,9 @@
   <h2>Changes and contact</h2>
   <p>If this policy changes, we'll update this page and its date. For questions, send feedback from the LUME beta in the TestFlight app.</p>
 
-  <footer>
-    <a href="./">LUME home</a>
-  </footer>
 </main>
+<footer>
+  <div class="wrap"><span>LUME Browser</span><span><a href="./">Home</a></span></div>
+</footer>
 </body>
 </html>
