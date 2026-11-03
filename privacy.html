@@ -17,32 +17,71 @@
 <main class="doc">
 
   <h1>Privacy policy</h1>
-  <p class="updated">Last updated October 13, 2026</p>
+  <p class="updated">Last updated November 2, 2026</p>
 
-  <p class="summary">LUME has no servers and no accounts. We don't collect, store or sell your personal data, and the app contains no analytics or advertising SDKs.</p>
+  <p class="summary">LUME has no servers and no LUME account. The developer does not receive, store or sell your personal data, and the app contains no analytics or advertising code. Some features send data to services you choose: the AI provider whose key you add, your own Mac, and the websites you use, including your mail and calendar.</p>
+
+  <p>This policy covers LUME for iPhone and LUME for Mac.</p>
 
   <h2>What stays on your device</h2>
-  <p>Your tabs, browsing history, settings and assistant conversations are stored on your iPhone. Websites you visit can set cookies and website data in LUME just as they would in any browser. You can clear them on the device.</p>
+  <p>LUME stores these on your iPhone or Mac: your tabs, browsing and listening history, bookmarks, settings, assistant conversations and what the assistant remembers, the books and documents on your Shelf, your downloads, and copies of the mail and calendar events you read in LUME, along with drafts and mail waiting to be sent.</p>
+  <p>On iPhone this data is included in your device backups (iCloud Backup or a backup to your computer), as your backup settings decide. Books on your Shelf and cached pages are left out of backups. LUME does not sync anything through iCloud.</p>
+  <p>Websites you visit can set cookies and website data in LUME, as they would in any browser.</p>
 
-  <h2>AI features and your AI provider</h2>
-  <p>LUME's AI features run only if you add an API key for an AI model provider (for example, Anthropic or OpenRouter). The key is kept in your device's Keychain, is not synced to iCloud and is not included in backups.</p>
-  <p>With a key added, LUME's AI features send text to that provider directly from your device: your requests to the assistant, and text from web pages you open or have open in tabs, so that the assistant can act on them and LUME can rearrange or summarize them for you. Without a key, nothing is sent to an AI provider. We never receive any of it. That provider's own privacy policy covers how it handles this data. If you pair LUME with your own Mac to run a model there, the request goes to that Mac instead.</p>
-  <p>Page summaries can instead use Apple's on-device model when Apple Intelligence is turned on; that stays on your iPhone. Nothing from a private tab is sent to any AI model.</p>
+  <h2>Passwords, cards and addresses</h2>
+  <p>Passwords, payment cards and addresses you save are kept in your device's Keychain. They stay on that device, are not synced to iCloud Keychain, and need Face ID, Touch ID or your passcode to fill. LUME fills them only into pages open in LUME. The assistant cannot read them.</p>
+  <p>When a site you are signing in to sends you a one-time code by email, LUME can look for it: for up to two minutes it reads the subjects and previews in your signed-in inbox, only from senders belonging to that site, without opening anything or marking it as read. The code is kept in memory and is never sent to an AI provider.</p>
 
-  <h2>Read-aloud voices</h2>
-  <p>The natural English voices run on your iPhone. The first time you use them, LUME downloads the voice files from GitHub. That download sends no personal information beyond what any file download does, such as your IP address to GitHub.</p>
+  <h2>Mail and calendar</h2>
+  <p>LUME shows your Gmail and your Google Calendar by reading those services' own websites, where you sign in inside LUME. LUME never sees or stores your password and holds no access token of its own: you stay signed in through the website's cookies, as in any browser. To keep your inbox current, LUME may read these sites in the background.</p>
+  <p>LUME reads your inbox list and the messages you open, and your events' title, time, place and calendar, plus notes and guests when you open an event's details. When you send mail or add an event, LUME fills in the site's own form, and the service sends it from your account. Google handles your mail and calendar under its own privacy policy.</p>
 
-  <h2>Websites</h2>
-  <p>Like any browser, LUME connects to the websites you open. Those sites see what they would see from any browser and follow their own privacy policies.</p>
+  <h2>AI features</h2>
+  <p>LUME's AI features run only with a model you choose: an API key you add for an AI provider (for example Anthropic or OpenRouter), or your own Mac paired with LUME. Keys are kept in the Keychain on that device, are not synced to iCloud and are not included in backups. On a Mac, LUME can use the Claude Code or Codex tools you have installed, which connect to Anthropic or OpenAI under your own account and follow those companies' terms, including any data they collect themselves.</p>
+  <p>With a model set up, LUME sends the provider what each feature needs, directly from your device. The developer never receives any of it. Depending on what you use and which settings are on, this can include:</p>
+  <ul>
+    <li>your requests to the assistant, and the text and images of the pages it works on for you;</li>
+    <li>the text of articles and pages LUME summarizes, including the news articles in your daily brief;</li>
+    <li>mail you ask about, summarize or draft a reply to; and, to sort your Updates and for what the assistant remembers, the sender, subject and preview of messages and the conversations you have opened;</li>
+    <li>your events' title, time, place and calendar name, but never their notes, guests or links when LUME reviews them for memory;</li>
+    <li>the changes on pages you watch;</li>
+    <li>with Fast decisions on, the text of ads and cookie banners that Clean pages could not sort out on its own.</li>
+  </ul>
+  <p>The switches in Settings decide which of these are sent. Settings › Browsing › Library › What LUME sends shows the pages Updates read for you and the exact text its model is sent. Nothing from a private tab is sent to any model, and passwords, cards and one-time codes are never sent. Without a key and without a paired Mac, nothing is sent to an AI provider.</p>
+  <p>Some features can use Apple's on-device model when Apple Intelligence is on; that stays on your device.</p>
+
+  <h2>Talk</h2>
+  <p>Talk turns your voice into text on your iPhone using Apple's on-device speech recognition. Recordings are not saved and are not sent anywhere. What you say then becomes a request to the assistant, which is sent to your AI provider like a typed one.</p>
+
+  <h2>Your Mac</h2>
+  <p>If you pair your iPhone with LUME on your Mac, the iPhone sends its model requests to the Mac over your local network instead of to a provider. That connection is protected by a pairing code but is not encrypted, so pair only on a network you trust.</p>
+
+  <h2>What LUME reads in the background</h2>
+  <p>For Updates and watched pages, LUME re-reads pages you watch, the articles they link to, and pages you visited this week, up to fifteen pages a day. It never opens mail, sign-in or account pages, or links in your mail, this way. For the daily brief, LUME gets headlines for your topics from Google News and opens the articles while signed out of every site.</p>
+
+  <h2>Websites and other services</h2>
+  <p>Like any browser, LUME connects to the websites you open, and those sites follow their own privacy policies. LUME also connects to:</p>
+  <ul>
+    <li>Google, for search, and for suggestions as you type in the address bar. Suggestions are sent without cookies and never from private tabs, and you can turn them off in Settings.</li>
+    <li>GitHub, to download the natural voices the first time you use them. That download sends nothing beyond what any file download does, such as your IP address.</li>
+    <li>Websites' own icons, and YouTube for video thumbnails.</li>
+  </ul>
+
+  <h2>Private tabs</h2>
+  <p>Private tabs keep their own cookies, save no history, keep mail you read in them in memory only, and are never sent to an AI model.</p>
+
+  <h2>Deleting your data</h2>
+  <p>In LUME you can clear your browsing and listening history and recently closed tabs; delete what LUME has recorded, item by item or all at once; make the assistant forget everything; delete conversations; delete saved passwords, cards and addresses; remove books from your Shelf; remove a provider's key; and forget a paired device.</p>
+  <p>LUME has no control yet for deleting its saved copies of your mail and calendar, or for clearing website sign-ins and cookies. Sign out on the website itself, or delete the app, which removes everything LUME stored on that device, apart from what is in your backups.</p>
 
   <h2>TestFlight</h2>
-  <p>If you use the beta through TestFlight, Apple shares crash reports, usage information and any feedback you send with the developer, as described in Apple's TestFlight privacy terms.</p>
+  <p>If you use the beta through TestFlight, Apple shares crash reports, usage information and any feedback you send with the developer, as described in Apple's TestFlight terms.</p>
 
   <h2>Children</h2>
   <p>LUME is not directed at children under 13.</p>
 
   <h2>Changes and contact</h2>
-  <p>If this policy changes, we'll update this page and its date. For questions, send feedback from the LUME beta in the TestFlight app.</p>
+  <p>If this policy changes, we'll update this page and its date. For questions, email <a href="mailto:liubinging@gmail.com">liubinging@gmail.com</a>.</p>
 
 </main>
 <footer>
